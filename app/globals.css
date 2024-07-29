@@ -12,6 +12,19 @@
     --primary: 131 154 235;
     --accent: 143 42 235;
   }
+
+  body {
+    @apply bg-background;
+  }
+  .navlink::after {
+    @apply content-[''] absolute bg-secondary h-[1.7px] md:h-[2px] w-[0%] left-0 -bottom-[3.5px] rounded-xl duration-300;
+  }
+  .navlink:hover::after {
+    @apply w-[100%];
+  }
+  .active::after {
+    @apply absolute bg-secondary h-[1.7px] md:h-[2px] w-[100%] left-0 -bottom-[3.5px] rounded-xl duration-300;
+  }
 }
 
 /* width */

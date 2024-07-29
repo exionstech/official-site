@@ -20,18 +20,6 @@ function NavBar() {
       name: "Services",
       link: "/#services",
     },
-    {
-      name: "Use Cases",
-      link: "/",
-    },
-    {
-      name: "Pricing",
-      link: "/",
-    },
-    {
-      name: "Blog",
-      link: "/",
-    },
   ];
 
   const toggleMenu = () => {
@@ -50,28 +38,29 @@ function NavBar() {
               <Link
                 key={index}
                 href={link.link}
-                className={`hover:text-secondary transition-all cursor-pointer flex items-center gap-2 text-[1.05rem]  font-bold text-black`}
+                className={`hover:text-secondary transition-all cursor-pointer flex items-center gap-2 text-[1.05rem]  font-bold text-black relative `}
               >
                 {link.name}
               </Link>
             ))}
 
             <div className="flex items-center gap-[40px] select-none">
-              <MainButton text="Get Started" className="px-2 py-2 rounded-xl bg-secondary" />
+              <MainButton
+                text="Get Started"
+                className="px-2 py-2 rounded-xl bg-secondary"
+              />
             </div>
           </div>
         </div>
       </div>
       {/* MOBILE */}
       <div
-        className={`block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-background backdrop-blur-lg py-2 animate-in fade-in zoom-in  ${
+        className={`block lg:hidden shadow-sm px-2  fixed top-0 w-full z-[999] bg-background backdrop-blur-lg py-2 animate-in fade-in zoom-in  ${
           menu ? "py-2" : ""
         } `}
       >
         <div className="flex justify-between mx-[10px]">
-          <div className="flex gap-[50px] text-[16px] items-center select-none">
-            <img src="/images/logo.svg" alt="logo" width={40} height={40} />
-          </div>
+        <Logo/>
           <div className="flex items-center gap-[40px]">
             {menu ? (
               <X
@@ -90,12 +79,13 @@ function NavBar() {
           <div className="my-8 select-none animate-in slide-in-from-right">
             <div className="flex flex-col gap-8 mt-8 mx-4">
               {links.map((link, index) => (
-                <p
+                <Link
                   key={index}
-                  className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray`}
+                  href={link.link}
+                  className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray  relative`}
                 >
                   {link.name}
-                </p>
+                </Link>
               ))}
             </div>
           </div>

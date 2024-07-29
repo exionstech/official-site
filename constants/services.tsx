@@ -10,7 +10,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiMonitor className="w-8 h-8 text-blue-600" />
+        <PiMonitor className="size-5 text-blue-600" />
       </div>
     ),
     title: "Website Design",
@@ -20,7 +20,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiStorefront className="w-8 h-8 text-blue-600" />
+        <PiStorefront className="size-5 text-blue-600" />
       </div>
     ),
     title: "E-commerce Store",
@@ -30,7 +30,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiLock className="w-8 h-8 text-blue-600" />
+        <PiLock className="size-5 text-blue-600" />
       </div>
     ),
     title: "Authentication",
@@ -40,7 +40,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiMegaphone className="w-8 h-8 text-blue-600" />
+        <PiMegaphone className="size-5 text-blue-600" />
       </div>
     ),
     title: "Social Media",
@@ -50,7 +50,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiAppStoreLogo className="w-8 h-8 text-blue-600" />
+        <PiAppStoreLogo className="size-5 text-blue-600" />
       </div>
     ),
     title: "App Development",
@@ -60,7 +60,7 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiHeadsetFill className="w-8 h-8 text-blue-600" />
+        <PiHeadsetFill className="size-5 text-blue-600" />
       </div>
     ),
     title: "Support",

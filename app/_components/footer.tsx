@@ -20,7 +20,7 @@ function FooterSection() {
   ];
   return (
     <section className="bg-text border rounded-t-[45px] p-5 md:p-[50px]">
-      <div className="flex flex-col gap-8 md:flex-row justify-between">
+      <div className="flex flex-col gap-5 md:gap-8 md:flex-row justify-between">
         <Link
           className="flex items-center justify-center gap-2 cursor-pointer"
           href="/"
@@ -37,7 +37,7 @@ function FooterSection() {
             <span className="text-secondary">Tech</span>
           </h1>
         </Link>
-        <div className="flex flex-col md:flex-row gap-[40px] items-center">
+        <div className="hidden lg:flex flex-col md:flex-row gap-[40px] items-center">
           {links?.map((item, index) => (
             <Link
               href={item.link}
@@ -48,23 +48,23 @@ function FooterSection() {
             </Link>
           ))}
         </div>
-        <div className="flex gap-[20px] items-center">
+        <div className="flex gap-[20px] items-center justify-center">
           {socials.map((social, index) => (
-            <div key={index}>
+            <Link href="/" className="cursor-pointer" key={index}>
               <img src={social} />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
-      <div className="mt-[66px] flex flex-col md:flex-row gap-8 justify-between">
-        <div>
+      <div className="mt-10 md:mt-[66px] flex flex-col md:flex-row gap-8 justify-between">
+        <div className="flex flex-col items-center md:items-start justify-center">
           <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
             Contact Us:
           </div>
 
           <p className="text-white mt-[27px]">Email: info@positivus.com</p>
           <p className="text-white mt-[27px]">Phone: 555-567-8901</p>
-          <p className="text-white mt-[27px]">
+          <p className="text-white mt-[27px] text-center md:text-left">
             Address: 1234 Main St Moonstone City, Stardust State 12345
           </p>
         </div>
@@ -76,11 +76,11 @@ function FooterSection() {
           />
         </div>
       </div>
-      <div className="my-[25px]">
+      <div className="my-3 md:my-[25px]">
         <Separator />
       </div>
       <div className="flex flex-col md:flex-row gap-1 md:gap-[40px]">
-        <p className="text-white text-p">
+        <p className="text-white text-sm md:text-lg">
           © 2023 Exions Tech. All Rights Reserved.
         </p>
       </div>

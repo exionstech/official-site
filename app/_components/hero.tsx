@@ -3,20 +3,20 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between w-full h-full mt-5">
-      <div className="md:w-[55%]">
-        <p className="text-6xl text-black font-bold">
+    <section className="flex flex-col md:flex-row items-center justify-between w-full h-full md:mt-5">
+      <div className="w-full md:w-[55%]">
+        <p className="text-4xl md:text-6xl text-black font-bold">
           Create, grow and scale your business
         </p>
-        <div className="md:hidden my-[35px] flex items-center justify-center">
+        <div className="md:hidden my-5 flex items-center justify-center">
           <img
             src="/images/banner.svg"
             alt="microphone illustration"
-            className="w-80"
+            className="w-90"
           />
         </div>
 
-        <p className="text-p text-black my-[35px]">
+        <p className="text-md font-semibold md:text-lg text-black my-5 md:my-10">
           At Exions Tech, we specialize in providing innovative IT services and
           solutions, transforming your digital ideas into reality or your ofline
           exellence into online presence with precision and excellence.
@@ -24,7 +24,7 @@ function HeroSection() {
 
         <MainButton
           text="Shedule a meet"
-          className="bg-secondary p-3 rounded-xl"
+          className="bg-secondary px-4 py-2 md:p-3 rounded-xl"
         />
       </div>
       <div className="hidden md:flex  items-center justify-center">

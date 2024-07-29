@@ -5,12 +5,13 @@ import { MaxWrapper } from "@/components/max-wrapper";
 import ServiceSection from "./_components/services";
 import FooterSection from "./_components/footer";
 
+
 export default function Home() {
   return (
     <main>
       <NavBar />
 
-      <MaxWrapper className="pt-[5rem] flex flex-col gap-36 px-20">
+      <MaxWrapper>
         <HeroSection />
         <About />
         <ServiceSection/>
