@@ -1,0 +1,110 @@
+"use client";
+
+import { useState } from "react";
+import { AlignJustify, X } from "lucide-react";
+import Image from "next/image";
+
+import Link from "next/link";
+import Logo from "./logo";
+import MainButton from "./buttons/main-button";
+import CollapsibleBanner from "./top-Banner";
+
+function NavBar() {
+  const [menu, setMenu] = useState(false);
+  const links = [
+    {
+      name: "About us",
+      link: "/#about",
+    },
+    {
+      name: "Services",
+      link: "/",
+    },
+    {
+      name: "Use Cases",
+      link: "/",
+    },
+    {
+      name: "Pricing",
+      link: "/",
+    },
+    {
+      name: "Blog",
+      link: "/",
+    },
+  ];
+
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
+
+  return (
+    <div className="sticky top-0  left-0 right-0  md:shadow-none z-20 backdrop-blur-lg flex flex-col gap-0 ">
+      <CollapsibleBanner />
+      {/* DESKTOP */}
+      <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 border-b border-slate-50/20">
+        <div className="flex justify-between items-center px-20">
+          <Logo />
+          <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.link}
+                className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray`}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <div className="flex items-center gap-[40px] select-none">
+              <MainButton text="Get Started" className="bg-secondary px-2 py-2 rounded-xl hover:bg-secondary/85" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* MOBILE */}
+      <div
+        className={`block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-background backdrop-blur-lg py-2 animate-in fade-in zoom-in  ${
+          menu ? "py-2" : ""
+        } `}
+      >
+        <div className="flex justify-between mx-[10px]">
+          <div className="flex gap-[50px] text-[16px] items-center select-none">
+            <img src="/images/logo.svg" alt="logo" width={40} height={40} />
+          </div>
+          <div className="flex items-center gap-[40px]">
+            {menu ? (
+              <X
+                className="cursor-pointer animate-in fade-in zoom-in text-text"
+                onClick={toggleMenu}
+              />
+            ) : (
+              <AlignJustify
+                className="size-6 text-text cursor-pointer animate-in fade-in zoom-in"
+                onClick={toggleMenu}
+              />
+            )}
+          </div>
+        </div>
+        {menu ? (
+          <div className="my-8 select-none animate-in slide-in-from-right">
+            <div className="flex flex-col gap-8 mt-8 mx-4">
+              {links.map((link, index) => (
+                <p
+                  key={index}
+                  className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray`}
+                >
+                  {link.name}
+                </p>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div></div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default NavBar;
