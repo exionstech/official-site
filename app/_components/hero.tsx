@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between w-full h-full mt-5">
       <div className="md:w-[55%]">
-        <p className="text-6xl text-text font-bold">
+        <p className="text-6xl text-black font-bold">
           Create, grow and scale your business
         </p>
         <div className="md:hidden my-[35px] flex items-center justify-center">
@@ -16,7 +16,7 @@ function HeroSection() {
           />
         </div>
 
-        <p className="text-p text-text my-[35px]">
+        <p className="text-p text-black my-[35px]">
           At Exions Tech, we specialize in providing innovative IT services and
           solutions, transforming your digital ideas into reality or your ofline
           exellence into online presence with precision and excellence.
@@ -24,7 +24,7 @@ function HeroSection() {
 
         <MainButton
           text="Shedule a meet"
-          className="bg-secondary hover:bg-secondary/85 p-3 rounded-xl"
+          className="bg-secondary p-3 rounded-xl"
         />
       </div>
       <div className="hidden md:flex  items-center justify-center">

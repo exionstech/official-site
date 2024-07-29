@@ -8,9 +8,9 @@ function About() {
       className="rounded-[45px] p-[50px] md:px-10 md:py-10 border border-b-[6px] border-text flex"
       id="about"
     >
-      <div className="space-y-5 w-[65%] pl-6">
+      <div className="space-y-7 w-[65%] pl-6">
       <div className="flex items-center gap-2">
-      <div className="text-5xl px-2 bg-secondary inline-block font-bold rounded-md">
+      <div className="text-5xl px-2 bg-secondary text-background inline-block font-bold rounded-md">
           Who
         </div>
         <p className="font-bold text-5xl">we are !</p>

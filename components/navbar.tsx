@@ -18,7 +18,7 @@ function NavBar() {
     },
     {
       name: "Services",
-      link: "/",
+      link: "/#services",
     },
     {
       name: "Use Cases",
@@ -39,10 +39,10 @@ function NavBar() {
   };
 
   return (
-    <div className="sticky top-0  left-0 right-0  md:shadow-none z-20 backdrop-blur-lg flex flex-col gap-0 ">
+    <div className="sticky top-0  left-0 right-0  md:shadow-none z-50 backdrop-blur-lg flex flex-col gap-0 ">
       <CollapsibleBanner />
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 border-b border-slate-50/20">
+      <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 border-b border-text/20">
         <div className="flex justify-between items-center px-20">
           <Logo />
           <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
@@ -50,14 +50,14 @@ function NavBar() {
               <Link
                 key={index}
                 href={link.link}
-                className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray`}
+                className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-black`}
               >
                 {link.name}
               </Link>
             ))}
 
             <div className="flex items-center gap-[40px] select-none">
-              <MainButton text="Get Started" className="bg-secondary px-2 py-2 rounded-xl hover:bg-secondary/85" />
+              <MainButton text="Get Started" className="px-2 py-2 rounded-xl bg-secondary" />
             </div>
           </div>
         </div>

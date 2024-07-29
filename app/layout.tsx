@@ -28,7 +28,7 @@ export default function RootLayout({
       className="!scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className={cn("text-text bg-background grainy", spaceGrotesk.className)}>
+      <body className={cn("text-text bg-white grainy", spaceGrotesk.className)}>
         {children}
       </body>
     </html>

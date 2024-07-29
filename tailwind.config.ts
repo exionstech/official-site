@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       colors: {
-        text: "rgb(var(--text))", 
-        background: "rgb(var(--background))",
+        text: "#000", 
+        background: "#fff",
         primary: "rgb(var(--primary))",
         secondary: "rgb(var(--secondary))",
         accent: "rgb(var(--accent))",

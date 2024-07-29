@@ -12,7 +12,9 @@ const Logo = () => {
         height={80}
         className="w-10"
       />
-      <h1 className="text-text text-4xl font-bold">Exions Tech</h1>
+      <h1 className="text-black text-4xl font-bold">Exions 
+        <span className="text-secondary">Tech</span>
+      </h1>
     </Link>
   );
 };
