@@ -36,7 +36,7 @@ export default function CollapsibleBanner() {
 Make Your IT Services Faster and More Accurate with Extion Tech`}</p>
             <a
               href="#"
-              className="ml-3 flex-none rounded-lg bg-white px-3 py-1 text-xs text-black shadow-sm hover:bg-gray-900/80"
+              className="ml-3 flex-none rounded-lg bg-white px-3 py-1 text-xs text-black shadow-sm hover:bg-text hover:text-background transition"
             >
               Contact
             </a>

@@ -50,7 +50,7 @@ function NavBar() {
               <Link
                 key={index}
                 href={link.link}
-                className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-black`}
+                className={`hover:text-secondary transition-all cursor-pointer flex items-center gap-2 text-[1.05rem]  font-bold text-black`}
               >
                 {link.name}
               </Link>
