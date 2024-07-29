@@ -1,14 +1,16 @@
 import { cn } from '@/lib/utils';
 import './main-button.css'
+import Link from 'next/link';
 
 interface MainButtonProps {
   text: string;
   className?: string;
+  url: string;
 }
 
-const MainButton = ({text, className}:MainButtonProps) => {
+const MainButton = ({text, className, url}:MainButtonProps) => {
   return (
-    <a  className={cn("button",className,"text-background")} href="#">
+    <Link  className={cn("button",className,"text-background")} href={url} target='_blank' >
          {text}
       <span className="button__icon-wrapper bg-background">
         <svg width={10} height={10} className="button__icon-svg text-text" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
@@ -19,7 +21,7 @@ const MainButton = ({text, className}:MainButtonProps) => {
         </svg>
       </span>
      
-    </a>
+    </Link>
   );
 }
 

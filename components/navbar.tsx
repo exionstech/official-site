@@ -48,6 +48,7 @@ function NavBar() {
               <MainButton
                 text="Get Started"
                 className="px-2 py-2 rounded-xl bg-secondary"
+                url="/"
               />
             </div>
           </div>

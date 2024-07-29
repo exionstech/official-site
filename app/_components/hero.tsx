@@ -25,6 +25,8 @@ function HeroSection() {
         <MainButton
           text="Shedule a meet"
           className="bg-secondary px-4 py-2 md:p-3 rounded-xl"
+          url="https://cal.com/exionstech/client-meet"
+
         />
       </div>
       <div className="hidden md:flex  items-center justify-center">

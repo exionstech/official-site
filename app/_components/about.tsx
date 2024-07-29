@@ -26,6 +26,7 @@ function About() {
         </p>
         <MainButton
           text="Join Our Community"
+          url="/"
           className="bg-secondary px-3 py-2 md:p-3 rounded-xl hover:bg-secondary/85"
         />
       </div>

@@ -73,6 +73,7 @@ function FooterSection() {
           <MainButton
             text="Subscribe to news "
             className="bg-secondary w-full px-3 py-4 rounded-xl"
+            url="/"
           />
         </div>
       </div>
