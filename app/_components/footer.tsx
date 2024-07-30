@@ -5,13 +5,19 @@ import MainButton from "@/components/buttons/main-button";
 import Logo from "@/components/logo";
 import Image from "next/image";
 import Link from "next/link";
+import { Avatars } from "@/components/aceternity/avatars";
+import { MoveUpRight } from "lucide-react";
+import { Dock, DockIcon } from "@/components/magicui/dock";
+import Instagram from "@/components/icons/instagram";
+import Github from "@/components/icons/github";
+import LinkedIn from "@/components/icons/linkedin";
+import Whatsapp from "@/components/icons/whatsapp";
 
 function FooterSection() {
   const links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/#about" },
     { name: "Services", link: "/#services" },
-    { name: "Contact", link: "/#contact" },
   ];
   const socials = [
     "/images/linkedin_icon.png",
@@ -19,7 +25,7 @@ function FooterSection() {
     "/images/twitter_icon.png",
   ];
   return (
-    <section className="bg-text border rounded-t-[45px] p-5 md:p-[50px] mx-3 md:mx-14 lg:mx-16">
+    <section className="bg-text border rounded-t-[45px] p-5 md:px-[40px] md:pt-7 mx-2 md:mx-14 lg:mx-16">
       <div className="flex flex-col gap-5 md:gap-8 md:flex-row justify-between">
         <Link
           className="flex items-center justify-center gap-2 cursor-pointer"
@@ -49,40 +55,72 @@ function FooterSection() {
           ))}
         </div>
         <div className="flex gap-[20px] items-center justify-center">
-          {socials.map((social, index) => (
-            <Link href="/" className="cursor-pointer" key={index}>
-              <img src={social} />
-            </Link>
-          ))}
+          <Avatars />
         </div>
       </div>
-      <div className="mt-10 md:mt-[66px] flex flex-col md:flex-row gap-8 justify-between">
-        <div className="flex flex-col items-center md:items-start justify-center">
+      <div className="mt-10 md:mt-[60px] flex flex-col md:flex-row gap-8 justify-between px-5">
+        <div className="flex flex-col items-center md:items-start justify-center w-full md:w-[30%]">
           <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
             Contact Us:
           </div>
 
-          <p className="text-white mt-[27px]">Email: info@positivus.com</p>
+          <Link
+            href="mailto://admin@exions.tech"
+            className="text-white mt-[27px] cursor-pointer"
+          >
+            Email: admin@exions.tech
+          </Link>
           <p className="text-white mt-[27px]">Phone: 555-567-8901</p>
           <p className="text-white mt-[27px] text-center md:text-left">
             Address: 1234 Main St Moonstone City, Stardust State 12345
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:gap-[20px] py-16 px-[40px] rounded-[14px]">
-          <Input placeholder="Email" className="h-[58px] rounded-[14px]" />
-          <MainButton
-            text="Subscribe to news "
-            className="bg-secondary w-full px-3 py-4 rounded-xl"
-            url="/"
-          />
+        <div className="flex flex-col items-center md:items-start justify-start w-full md:w-[30%]">
+          <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
+            Our Community:
+          </div>
+
+          <Link
+            href="mailto://admin@exions.tech"
+            className="text-white mt-[27px] cursor-pointer flex items-center gap-1 underline"
+          >
+            Techtonic Community
+          </Link>
+        </div>
+        <div className="flex flex-col items-center md:items-start justify-start">
+          <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
+            Socials:
+          </div>
+          <div className="flex items-center justify-center -mt-5">
+            <Dock className="flex items-center">
+              <DockIcon className="">
+                <Link
+                  href="https://www.instagram.com/suman_0.3"
+                  target="_blank"
+                >
+                  <Instagram className="size-7" />
+                </Link>
+              </DockIcon>
+              <DockIcon className="">
+                <Link href="https://www.linkedin.com/in/mon03" target="_blank">
+                  <LinkedIn className="size-6" />
+                </Link>
+              </DockIcon>
+              <DockIcon className="">
+                <Link href="https://wa.me/+919832800571" target="_blank">
+                  <Whatsapp className="size-6" />
+                </Link>
+              </DockIcon>
+            </Dock>
+          </div>
         </div>
       </div>
       <div className="my-3 md:my-[25px]">
         <Separator />
       </div>
-      <div className="flex flex-col md:flex-row gap-1 md:gap-[40px]">
-        <p className="text-white text-sm md:text-lg">
-          © 2023 Exions Tech. All Rights Reserved.
+      <div className="w-full flex flex-col md:flex-row gap-1 md:gap-[40px] items-center justify-center">
+        <p className="text-white text-sm md:text-[1rem] text-center">
+          © 2024 Exions Tech. All Rights Reserved.
         </p>
       </div>
     </section>
