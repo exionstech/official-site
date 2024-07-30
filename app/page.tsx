@@ -5,6 +5,7 @@ import { MaxWrapper } from "@/components/max-wrapper";
 import ServiceSection from "./_components/services";
 import FooterSection from "./_components/footer";
 import Testimonals from "./_components/testimonials";
+import WorkedWith from "@/components/syntaxui/logo-cloude";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <MaxWrapper>
         <HeroSection />
+        <WorkedWith/>
         <About />
         <ServiceSection />
         <Testimonals/>
