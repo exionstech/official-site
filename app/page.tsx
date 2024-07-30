@@ -4,7 +4,7 @@ import About from "./_components/about";
 import { MaxWrapper } from "@/components/max-wrapper";
 import ServiceSection from "./_components/services";
 import FooterSection from "./_components/footer";
-
+import Testimonals from "./_components/testimonials";
 
 export default function Home() {
   return (
@@ -14,9 +14,10 @@ export default function Home() {
       <MaxWrapper>
         <HeroSection />
         <About />
-        <ServiceSection/>
-        <FooterSection/>
+        <ServiceSection />
+        <Testimonals/>
       </MaxWrapper>
+      <FooterSection />
     </main>
   );
 }

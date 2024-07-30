@@ -19,7 +19,7 @@ function FooterSection() {
     "/images/twitter_icon.png",
   ];
   return (
-    <section className="bg-text border rounded-t-[45px] p-5 md:p-[50px]">
+    <section className="bg-text border rounded-t-[45px] p-5 md:p-[50px] mx-3 md:mx-14 lg:mx-16">
       <div className="flex flex-col gap-5 md:gap-8 md:flex-row justify-between">
         <Link
           className="flex items-center justify-center gap-2 cursor-pointer"
@@ -68,7 +68,7 @@ function FooterSection() {
             Address: 1234 Main St Moonstone City, Stardust State 12345
           </p>
         </div>
-        <div className="bg-[#292A32] flex flex-col md:flex-row gap-4 justify-center items-center md:gap-[20px] py-16 px-[40px] rounded-[14px]">
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:gap-[20px] py-16 px-[40px] rounded-[14px]">
           <Input placeholder="Email" className="h-[58px] rounded-[14px]" />
           <MainButton
             text="Subscribe to news "

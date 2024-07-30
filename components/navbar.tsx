@@ -27,10 +27,10 @@ function NavBar() {
   };
 
   return (
-    <div className="sticky top-0  left-0 right-0  md:shadow-none z-50 backdrop-blur-lg flex flex-col gap-0 ">
+    <div className="sticky top-0  left-0 right-0  md:shadow-none z-50 backdrop-blur-lg flex flex-col gap-0 border-b border-text/20">
       <CollapsibleBanner />
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 border-b border-text/20">
+      <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 2xl:px-64">
         <div className="flex justify-between items-center px-20">
           <Logo />
           <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
@@ -56,7 +56,7 @@ function NavBar() {
       </div>
       {/* MOBILE */}
       <div
-        className={`block lg:hidden shadow-sm px-2  fixed top-0 w-full z-[999] bg-background backdrop-blur-lg py-2 animate-in fade-in zoom-in  ${
+        className={`block lg:hidden shadow-sm px-2  fixed top-0 w-full z-[999] bg-background backdrop-blur-lg py-3 animate-in fade-in zoom-in  ${
           menu ? "py-2" : ""
         } `}
       >
