@@ -25,6 +25,10 @@ function NavBar() {
       link: "/#feedback",
     },
     {
+      name: "Projects",
+      link: "/projects",
+    },
+    {
       name: "Pricing",
       link: "/pricing",
     },
