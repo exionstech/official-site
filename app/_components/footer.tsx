@@ -25,7 +25,7 @@ function FooterSection() {
     "/images/twitter_icon.png",
   ];
   return (
-    <section className="bg-text border rounded-t-[45px] p-5 md:px-[40px] md:pt-7 mx-2 md:mx-14 lg:mx-16">
+    <section className="bg-text border rounded-t-[45px] p-5 md:px-[40px] md:pt-7 mx-2 md:mx-14 lg:mx-16 max-w-screen-xl 2xl:mx-auto">
       <div className="flex flex-col gap-5 md:gap-8 md:flex-row justify-between">
         <Link
           className="flex items-center justify-center gap-2 cursor-pointer"

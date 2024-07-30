@@ -24,6 +24,10 @@ function NavBar() {
       name: "Feedback",
       link: "/#feedback",
     },
+    {
+      name: "Pricing",
+      link: "/pricing",
+    },
   ];
 
   const toggleMenu = () => {
