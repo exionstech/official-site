@@ -68,7 +68,7 @@ const TestimonialCard: FC<TestimonalCardProps> = ({
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 pb-10 md:pb-20 -mt-10 md:space-y-2">
+    <div id="feedback" className="flex flex-col items-center justify-center gap-3 pb-10 md:pb-20 -mt-10 md:space-y-2">
       <h1 className="mb-1 max-w-2xl text-left md:text-center text-4xl font-bold tracking-tighter text-gray-900 md:text-5xl dark:text-gray-100 leading-snug md:leading-normal">
         Why people love <span className="bg-secondary text-background px-2 py-0.5 rounded-md"> Exions</span>
       </h1>
