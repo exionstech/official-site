@@ -7,6 +7,7 @@ import FooterSection from "./_components/footer";
 import Testimonals from "./_components/testimonials";
 import WorkedWith from "@/components/syntaxui/logo-cloude";
 import Projects from "@/components/projects";
+import Community from "./_components/community";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <WorkedWith/>
         <About />
         <ServiceSection />
+        <Community/>
         <Projects/>
         <Testimonals/>
       </MaxWrapper>
