@@ -22,6 +22,11 @@ const logos = [
       url: '/logo/seed.svg',
       size: 'w-28 md:w-32',
     },
+    {
+      name: 'Sync',
+      url: '/logo/sync.svg',
+      size: 'w-28 md:w-32',
+    }
   ]
   
   const WorkedWith = () => {
