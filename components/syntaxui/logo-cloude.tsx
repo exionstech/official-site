@@ -1,54 +1,26 @@
-// Instructions for integrating continuous logo animation in Tailwind CSS:
-// Add the following configurations to the `extend` section of your `tailwind.config.js`:
-// 1. Keyframes for 'logo-cloud' animation that continuously moves logos from right to left:
-//    keyframes: {
-//      'logo-cloud': {
-//        from: { transform: 'translateX(0)' },
-//        to: { transform: 'translateX(calc(-100% - 4rem))' },
-//      },
-//    }
-// 2. Animation utility to apply this keyframe:
-//    animation: {
-//      'logo-cloud': 'logo-cloud 30s linear infinite', // Adjust duration and timing as needed for your design.
-//    }
+import { cn } from "@/lib/utils"
+
 
 const logos = [
     {
-      name: 'Vercel',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg',
+      name: 'XCONICS',
+      url: '/logo/xconics.svg',
+      size: 'w-26 md:w-27 h-auto',
     },
     {
-      name: 'Nextjs',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg',
+      name: 'EDPL',
+      url: '/logo/edpl.svg',
+      size: 'w-18 md:w-24',
     },
     {
-      name: 'Prime',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg',
+      name: 'Praxis',
+      url: '/logo/praxis.svg',
+      size: 'w-36',
     },
     {
-      name: 'Trustpilot',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg',
-    },
-    {
-      name: 'Webflow',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg',
-    },
-  
-    {
-      name: 'Airbnb',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg',
-    },
-    {
-      name: 'Tina',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg',
-    },
-    {
-      name: 'Stackoverflow',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg',
-    },
-    {
-      name: 'mistral',
-      url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg',
+      name: 'Seed',
+      url: '/logo/seed.svg',
+      size: 'w-28 md:w-32',
     },
   ]
   
@@ -57,7 +29,7 @@ const logos = [
       <div className="w-full">
         <div className="mx-auto w-full">
           <div
-            className="group relative mt-6 flex gap-6 overflow-hidden p-2"
+            className="group relative mt-1 flex gap-4 md:gap-10 overflow-hidden p-1 md:p-2"
             style={{
               maskImage:
                 'linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)',
@@ -74,7 +46,7 @@ const logos = [
                     <img
                       key={key}
                       src={logo.url}
-                      className="h-10 w-28 px-2"
+                      className={cn("px-2", logo.size)}
                       alt={`${logo.name}`}
                     />
                   ))}
