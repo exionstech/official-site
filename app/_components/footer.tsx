@@ -81,7 +81,8 @@ function FooterSection() {
           </div>
 
           <Link
-            href="mailto://admin@exions.tech"
+            href="https://techtonic.palashdas.tech"
+            target="_blank"
             className="text-white mt-[27px] cursor-pointer flex items-center gap-1 underline"
           >
             Techtonic Community

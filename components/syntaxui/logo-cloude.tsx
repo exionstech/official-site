@@ -45,7 +45,7 @@ const logos = [
               .map((index) => (
                 <div
                   key={index}
-                  className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-6"
+                  className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-6 select-none pointer-events-none"
                 >
                   {logos.map((logo, key) => (
                     <img

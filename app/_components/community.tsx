@@ -12,8 +12,7 @@ export default function Community() {
         </h1>
 
         <p className="text-md font-semibold md:text-xl text-left md:text-center w-full md:w-[60%]">
-          We are proud to be associated with some of the best companies in the
-          industry.
+        We take pride in our association with some of the best student and developer communities.
         </p>
       </div>
       <StaticLogo/>

@@ -11,7 +11,7 @@ import MainButton from "./buttons/main-button";
 
 export default function Projects() {
   return (
-    <section className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-10 md:-mt-12 pb-14 md:pb-4">
+    <section className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-14 md:-mt-12 pb-14 md:pb-4">
       <div className="flex flex-col space-y-5 items-center justify-center mt-5 md:mt-0 md:mb-5">
         <h1 className="text-4xl md:text-5xl font-bold">
           Our Open Source
