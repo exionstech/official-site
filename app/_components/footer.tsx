@@ -59,20 +59,20 @@ function FooterSection() {
         </div>
       </div>
       <div className="mt-10 md:mt-[60px] flex flex-col md:flex-row gap-8 justify-between px-5">
-        <div className="flex flex-col items-center md:items-start justify-center w-full md:w-[30%]">
+        <div className="flex flex-col gap-1 items-center md:items-start justify-center w-full md:w-[30%]">
           <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
             Contact Us:
           </div>
 
           <Link
             href="mailto://admin@exions.tech"
-            className="text-white mt-[27px] cursor-pointer"
+            className="text-white mt-[19px] cursor-pointer"
           >
             Email: admin@exions.tech
           </Link>
-          <p className="text-white mt-[27px]">Phone: 555-567-8901</p>
-          <p className="text-white mt-[27px] text-center md:text-left">
-            Address: 1234 Main St Moonstone City, Stardust State 12345
+          <p className="text-white mt-[10px]">Phone: +91 6291240981</p>
+          <p className="text-white mt-[10px] text-center md:text-left">
+            Address: Shapoorji Sukhobrishti Complex, Kolkata New Town, Action Area - III, 700135
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start justify-start w-full md:w-[30%]">
@@ -83,7 +83,7 @@ function FooterSection() {
           <Link
             href="https://techtonic.palashdas.tech"
             target="_blank"
-            className="text-white mt-[27px] cursor-pointer flex items-center gap-1 underline"
+            className="text-white mt-[20px] cursor-pointer flex items-center gap-1 underline"
           >
             Techtonic Community
           </Link>
