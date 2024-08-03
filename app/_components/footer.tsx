@@ -11,7 +11,6 @@ import { Dock, DockIcon } from "@/components/magicui/dock";
 import Instagram from "@/components/icons/instagram";
 import Github from "@/components/icons/github";
 import LinkedIn from "@/components/icons/linkedin";
-import Whatsapp from "@/components/icons/whatsapp";
 
 function FooterSection() {
   const links = [
@@ -72,7 +71,7 @@ function FooterSection() {
           </Link>
           <p className="text-white mt-[10px]">Phone: +91 6291240981</p>
           <p className="text-white mt-[10px] text-center md:text-left">
-            Address: Shapoorji Sukhobrishti Complex, Kolkata New Town, Action Area - III, 700135
+            Address: Kolkata, WB, India
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start justify-start w-full md:w-[30%]">
@@ -96,20 +95,18 @@ function FooterSection() {
             <Dock className="flex items-center">
               <DockIcon className="">
                 <Link
-                  href="https://www.instagram.com/suman_0.3"
+                  href="https://www.instagram.com/exions.tech"
                   target="_blank"
                 >
                   <Instagram className="size-7" />
                 </Link>
               </DockIcon>
               <DockIcon className="">
-                <Link href="https://www.linkedin.com/in/mon03" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/company/exionstech"
+                  target="_blank"
+                >
                   <LinkedIn className="size-6" />
-                </Link>
-              </DockIcon>
-              <DockIcon className="">
-                <Link href="https://wa.me/+919832800571" target="_blank">
-                  <Whatsapp className="size-6" />
                 </Link>
               </DockIcon>
             </Dock>
