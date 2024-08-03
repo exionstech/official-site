@@ -3,7 +3,8 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/navbar";
-import CrispChat from "@/components/Crisp";
+import CrispChat from "@/components/crisp";
+
 
 export const metadata: Metadata = {
   title: "Exions Tech",
