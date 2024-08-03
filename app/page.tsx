@@ -8,6 +8,7 @@ import Testimonals from "./_components/testimonials";
 import WorkedWith from "@/components/syntaxui/logo-cloude";
 import Projects from "@/components/projects";
 import Community from "./_components/community";
+import CrispChat from "@/components/Crisp";
 
 export default function Home() {
   return (

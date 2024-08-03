@@ -40,16 +40,6 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
-        <PiMegaphone className="size-5 text-blue-600" />
-      </div>
-    ),
-    title: "Social Media",
-    description:
-      "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
-  },
-  {
-    icon: (
-      <div className="p-4 border rounded-3xl border-text">
         <PiAppStoreLogo className="size-5 text-blue-600" />
       </div>
     ),
@@ -60,11 +50,21 @@ export const services = [
   {
     icon: (
       <div className="p-4 border rounded-3xl border-text">
+        <PiMegaphone className="size-5 text-blue-600" />
+      </div>
+    ),
+    title: "Social Media",
+    description:
+      "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
+  },
+  {
+    icon: (
+      <div className="p-4 border rounded-3xl border-text">
         <PiHeadsetFill className="size-5 text-blue-600" />
       </div>
     ),
-    title: "Support",
+    title: "Saas",
     description:
-      "We offer support for all our clients. We are here to help you with any issues or questions you may have.",
+      "We build custom software as a service (SaaS) solutions. From MVP to full-scale product, we can help you bring your idea to life.",
   },
 ];

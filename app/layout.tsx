@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/navbar";
+import CrispChat from "@/components/Crisp";
 
 export const metadata: Metadata = {
   title: "Exions Tech",
@@ -30,6 +31,7 @@ export default function RootLayout({
     >
       <body className={cn("text-text bg-white grainy", spaceGrotesk.className)}>
         {children}
+        <CrispChat />
       </body>
     </html>
   );
