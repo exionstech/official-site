@@ -11,7 +11,10 @@ import MainButton from "./buttons/main-button";
 
 export default function Projects() {
   return (
-    <section className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-14 md:-mt-12 pb-14 md:pb-4">
+    <section
+      className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-14 md:-mt-12 pb-14 md:pb-4"
+      id="projects"
+    >
       <div className="flex flex-col space-y-5 items-center justify-center mt-5 md:mt-0 md:mb-5">
         <h1 className="text-4xl md:text-5xl font-bold">
           Our Open Source
@@ -67,13 +70,13 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <MainButton
+      {/* <MainButton
           text="View All Projects"
           className="bg-secondary px-4 py-2 md:p-3 rounded-xl"
           url="/projects"
           target="_self"
 
-        />
+        /> */}
     </section>
   );
 }

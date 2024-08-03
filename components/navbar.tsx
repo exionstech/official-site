@@ -26,12 +26,12 @@ function NavBar() {
     },
     {
       name: "Projects",
-      link: "/projects",
+      link: "/#projects",
     },
-    {
-      name: "Pricing",
-      link: "/pricing",
-    },
+    // {
+    //   name: "Pricing",
+    //   link: "/pricing",
+    // },
   ];
 
   const toggleMenu = () => {

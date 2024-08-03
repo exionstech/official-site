@@ -13,11 +13,11 @@ import Github from "@/components/icons/github";
 import LinkedIn from "@/components/icons/linkedin";
 
 function FooterSection() {
-  const links = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "/#about" },
-    { name: "Services", link: "/#services" },
-  ];
+  // const links = [
+  //   { name: "Home", link: "/" },
+  //   { name: "About Us", link: "/#about" },
+  //   { name: "Services", link: "/#services" },
+  // ];
   const socials = [
     "/images/linkedin_icon.png",
     "/images/facebook_icon.png",
@@ -42,17 +42,6 @@ function FooterSection() {
             <span className="text-secondary">Tech</span>
           </h1>
         </Link>
-        <div className="hidden lg:flex flex-col md:flex-row gap-[40px] items-center">
-          {links?.map((item, index) => (
-            <Link
-              href={item.link}
-              key={index}
-              className="text-white underline cursor-pointer text-p"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
         <div className="flex gap-[20px] items-center justify-center">
           <Avatars />
         </div>
@@ -82,7 +71,7 @@ function FooterSection() {
           <Link
             href="https://techtonic.palashdas.tech"
             target="_blank"
-            className="text-white mt-[20px] cursor-pointer flex items-center gap-1 underline"
+            className="text-white mt-[20px] cursor-pointer flex items-center gap-1"
           >
             Techtonic Community
           </Link>

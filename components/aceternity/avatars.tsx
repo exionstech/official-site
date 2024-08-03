@@ -4,18 +4,18 @@ import { AnimatedTooltip } from "./avtar-tooltip";
 
 const people = [
   {
-    id: 1,
-    name: "Suman Mondal",
-    designation: "Founder",
-    image:
-      "/avtar/Suman.jpeg",
-  },
-  {
     id: 2,
     name: "Atmajo Chowdhury",
     designation: "Co Founder & CEO",
     image:
       "/avtar/Atmajo.jpeg",
+  },
+  {
+    id: 1,
+    name: "Suman Mondal",
+    designation: "Founder",
+    image:
+      "/avtar/Suman.jpeg",
   },
   {
     id: 3,
