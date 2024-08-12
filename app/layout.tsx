@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import NavBar from "@/components/navbar";
 import CrispChat from "@/components/crisp";
-
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Exions Tech",
@@ -33,6 +32,7 @@ export default function RootLayout({
       <body className={cn("text-text bg-white grainy", spaceGrotesk.className)}>
         {children}
         <CrispChat />
+        <Analytics />
       </body>
     </html>
   );
