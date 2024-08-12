@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { AlignJustify, X } from "lucide-react";
-import Image from "next/image";
 
 import Link from "next/link";
 import Logo from "./logo";
@@ -28,14 +27,14 @@ function NavBar() {
       name: "Projects",
       link: "/#projects",
     },
-    // {
-    //   name: "Pricing",
-    //   link: "/pricing",
-    // },
   ];
 
   const toggleMenu = () => {
     setMenu(!menu);
+  };
+
+  const handleLinkClick = () => {
+    setMenu(false);
   };
 
   return (
@@ -60,7 +59,7 @@ function NavBar() {
               <MainButton
                 text="Get Started"
                 className="px-2 py-2 rounded-xl bg-secondary"
-               url="https://cal.com/exionstech/client-meet"
+                url="https://cal.com/exionstech/client-meet"
               />
             </div>
           </div>
@@ -73,7 +72,7 @@ function NavBar() {
         } `}
       >
         <div className="flex justify-between mx-[10px]">
-        <Logo/>
+          <Logo />
           <div className="flex items-center gap-[40px]">
             {menu ? (
               <X
@@ -96,6 +95,7 @@ function NavBar() {
                   key={index}
                   href={link.link}
                   className={`hover:text-primary transition-all cursor-pointer flex items-center gap-2  font-[500] text-gray  relative`}
+                  onClick={handleLinkClick}
                 >
                   {link.name}
                 </Link>

@@ -52,19 +52,21 @@ export default function Projects() {
                     View <ArrowRight className="w-4 h-4 -rotate-45" />
                   </Button>
                 </Link>
-                <Link
-                  href={project.github}
-                  className="flex items-center gap-1"
-                  target="_blank"
-                >
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    className="px-2.5 bg-text text-background"
+                {project.github && (
+                  <Link
+                    href={project.github}
+                    className="flex items-center gap-1"
+                    target="_blank"
                   >
-                    <FaGithub className="w-4 h-4" />
-                  </Button>
-                </Link>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="px-2.5 bg-text text-background"
+                    >
+                      <FaGithub className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
