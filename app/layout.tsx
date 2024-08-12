@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import CrispChat from "@/components/crisp";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export const metadata: Metadata = {
   title: "Exions Tech",
@@ -33,6 +35,7 @@ export default function RootLayout({
         {children}
         <CrispChat />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
