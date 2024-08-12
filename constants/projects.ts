@@ -7,14 +7,14 @@ export const projects = [
     image: "/projects/project1.png",
     link: "https://seed.exions.xyz",
   },
-  {
-    title: "Chillhum Web Design",
-    description:
-      "Our team has designed the UI for a sleek E-Commerce site called Chillhum, tailored specifically for GenZ.",
-    github: "",
-    image: "/projects/project6.png",
-    link: "https://www.behance.net/gallery/204801609/Chillhum-E-Commerce-UIUX-Design",
-  },
+  // {
+  //   title: "Chillhum Web Design",
+  //   description:
+  //     "Our team has designed the UI for a sleek E-Commerce site called Chillhum, tailored specifically for GenZ.",
+  //   github: "",
+  //   image: "/projects/project6.png",
+  //   link: "https://www.behance.net/gallery/204801609/Chillhum-E-Commerce-UIUX-Design",
+  // },
   {
     title: "Quick Bio",
     description:
