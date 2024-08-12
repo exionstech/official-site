@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Exions Tech",
   description:
     "A premier IT services and consultancy service. We specialize in website and app design, development, and social media services, delivering customized solutions for your business needs.",
-  icons: { icon: "./logo/white-logo.svg" },
+  icons: { icon: "./logo/logo2.svg" },
 };
 
 const spaceGrotesk = Space_Grotesk({
