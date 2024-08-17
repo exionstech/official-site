@@ -20,7 +20,7 @@ export default function Home() {
         <ServiceSection />
         <Community/>
         <Projects/>
-        <Testimonals/>
+        {/* <Testimonals/> */}
       </MaxWrapper>
       <FooterSection />
     </main>
