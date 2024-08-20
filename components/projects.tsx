@@ -12,20 +12,19 @@ import MainButton from "./buttons/main-button";
 export default function Projects() {
   return (
     <section
-      className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-14 md:-mt-12 pb-14 md:pb-4"
+      className="flex-wrap flex flex-col items-center justify-center gap-6 md:gap-10 overflow-hidden -mt-14 md:-mt-12 pb-14 md:pb-4 mb-4 md:mb-10"
       id="projects"
     >
       <div className="flex flex-col space-y-5 items-center justify-center mt-5 md:mt-0 md:mb-5">
         <h1 className="text-4xl md:text-5xl font-bold">
-          Our Open Source
+          Our Completed
           <span className="md:ml-2 bg-secondary text-background inline-block px-3 py-1 md:py-2 rounded-md">
             Projects
           </span>
         </h1>
 
-        <p className="text-md font-semibold md:text-xl text-left md:text-center w-full md:w-[60%]">
-          Check out some of our open source projects that we have built and
-          contributed to.
+        <p className="text-md font-semibold md:text-xl text-left md:text-center w-full md:w-[90%]">
+          We have successfully delivered a variety of projects
         </p>
       </div>
       <div className="flex flex-wrap gap-6 w-full sm:grid grid-cols-2 lg:grid-cols-3">

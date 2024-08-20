@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "Seed",
+    title: "XCONICS",
     description:
-      "A open source design tool that enables users to design software architectures with ease...",
-    github: "https://github.com/suman-3/seed",
-    image: "/projects/project1.png",
-    link: "https://seed.exions.xyz",
+      "Exions Tech successfully delivered the official XCONICS website, creating a responsive, user-friendly platform that highlights their innovative products and services.",
+    github: "",
+    image: "/projects/xconics.png",
+    link: "https://xconics.vercel.app",
   },
   // {
   //   title: "Chillhum Web Design",
