@@ -7,14 +7,14 @@ export const projects = [
     image: "/projects/xconics.png",
     link: "https://xconics.vercel.app",
   },
-  // {
-  //   title: "Chillhum Web Design",
-  //   description:
-  //     "Our team has designed the UI for a sleek E-Commerce site called Chillhum, tailored specifically for GenZ.",
-  //   github: "",
-  //   image: "/projects/project6.png",
-  //   link: "https://www.behance.net/gallery/204801609/Chillhum-E-Commerce-UIUX-Design",
-  // },
+  {
+    title: "EDPL Travel & Tours",
+    description:
+      "Exons Tech developed an online platform for EDPL Travel Agency, enhancing their digital presence and streamlining travel bookings.",
+    github: "",
+    image: "/projects/edpl.png",
+    link: "https://edpl.in/",
+  },
   {
     title: "Quick Bio",
     description:
