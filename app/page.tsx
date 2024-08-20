@@ -12,7 +12,6 @@ import Community from "./_components/community";
 export default function Home() {
   return (
     <main>
-      <NavBar />
       <MaxWrapper>
         <HeroSection />
         <WorkedWith/>

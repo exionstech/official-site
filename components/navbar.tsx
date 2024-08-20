@@ -79,101 +79,99 @@ function NavBar() {
               </Link>
             ))}
 
-            <div className="flex items-center gap-[40px] select-none">
-              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                <DialogTrigger asChild className="cursor-pointer">
-                  <div
-                    className={cn(
-                      "button text-background bg-secondary px-4 py-2 md:py-2 md:px-3 rounded-xl"
-                    )}
-                  >
-                    Get In Touch
-                    <span className="button__icon-wrapper bg-background">
-                      <svg
-                        width={10}
-                        height={10}
-                        className="button__icon-svg text-text"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 15"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                        />
-                      </svg>
-                      <svg
-                        className="button__icon-svg button__icon-svg--copy text-text"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        fill="none"
-                        viewBox="0 0 14 15"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                        />
-                      </svg>
-                    </span>
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+              <DialogTrigger asChild className="cursor-pointer">
+                <div
+                  className={cn(
+                    "button text-background bg-secondary px-4 py-2 md:py-2 md:px-3 rounded-xl flex items-center gap-2",
+                  )}
+                >
+                  Get In Touch
+                  <span className="button__icon-wrapper bg-background">
+                    <svg
+                      width={10}
+                      height={10}
+                      className="button__icon-svg text-text"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      />
+                    </svg>
+                    <svg
+                      className="button__icon-svg button__icon-svg--copy text-text"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={10}
+                      height={10}
+                      fill="none"
+                      viewBox="0 0 14 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Get in touch</DialogTitle>
+                  <DialogDescription>
+                    <p>Fill in the form to get in touch with us</p>
+                  </DialogDescription>
+                </DialogHeader>
+                <form onSubmit={handleSubmit}>
+                  <div className="grid gap-4 py-2">
+                    <Label htmlFor="name" className="-mb-2">
+                      Name
+                    </Label>
+                    <Input
+                      id="name"
+                      placeholder="Name"
+                      type="text"
+                      required
+                      name="name"
+                    />
+                    <Label htmlFor="email" className="-mb-2">
+                      Email
+                    </Label>
+                    <Input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      required
+                      name="email"
+                    />
+                    <Label htmlFor="message" className="-mb-2">
+                      Message
+                    </Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Message"
+                      className="max-h-[80px] resize-none"
+                      required
+                      name="message"
+                    />
+                    <Button
+                      type="submit"
+                      className="mt-1 bg-secondary text-background"
+                      disabled={state.submitting}
+                    >
+                      {state.submitting ? "Sending" : "Send"}
+                      {state.submitting ? (
+                        <Loader2 className="w-5 h-5 animate-spin ml-2" />
+                      ) : (
+                        ""
+                      )}
+                    </Button>
                   </div>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle>Get in touch</DialogTitle>
-                    <DialogDescription>
-                      <p>Fill in the form to get in touch with us</p>
-                    </DialogDescription>
-                  </DialogHeader>
-                  <form onSubmit={handleSubmit}>
-                    <div className="grid gap-4 py-2">
-                      <Label htmlFor="name" className="-mb-2">
-                        Name
-                      </Label>
-                      <Input
-                        id="name"
-                        placeholder="Name"
-                        type="text"
-                        required
-                        name="name"
-                      />
-                      <Label htmlFor="email" className="-mb-2">
-                        Email
-                      </Label>
-                      <Input
-                        id="email"
-                        placeholder="Email"
-                        type="email"
-                        required
-                        name="email"
-                      />
-                      <Label htmlFor="message" className="-mb-2">
-                        Message
-                      </Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Message"
-                        className="max-h-[80px] resize-none"
-                        required
-                        name="message"
-                      />
-                      <Button
-                        type="submit"
-                        className="mt-1 bg-secondary text-background"
-                        disabled={state.submitting}
-                      >
-                        {state.submitting ? "Sending" : "Send"}
-                        {state.submitting ? (
-                          <Loader2 className="w-5 h-5 animate-spin ml-2" />
-                        ) : (
-                          ""
-                        )}
-                      </Button>
-                    </div>
-                  </form>
-                </DialogContent>
-              </Dialog>
-            </div>
+                </form>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>

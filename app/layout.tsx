@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import '@/components/buttons/main-button.css'
 import { cn } from "@/lib/utils";
 import CrispChat from "@/components/crisp";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import NavBar from "@/components/navbar";
 
 
 export const metadata: Metadata = {
@@ -31,7 +33,8 @@ export default function RootLayout({
       className="!scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className={cn("text-text bg-white grainy", spaceGrotesk.className)}>
+      <body className={cn("text-text bg-white grainy relative overflow-x-hidden", spaceGrotesk.className)}>
+      <NavBar />
         {children}
         <CrispChat />
         <Analytics />

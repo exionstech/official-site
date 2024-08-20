@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import './main-button.css'
 import Link from 'next/link';
 
 interface MainButtonProps {
