@@ -57,7 +57,7 @@ const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState<'M' | 'A'>('M')
 
   const Heading = () => (
-    <div className="relative z-10 my-12 flex flex-col items-center justify-center gap-4 px-5 md:px-0">
+    <div className="relative z-10 my-12 flex flex-col items-center justify-center gap-4 px-5 md:px-0 mb-14">
       <div className="flex w-full flex-col items-start justify-center space-y-4 md:items-center">
         <p className="mt-2 text-4xl md:text-5xl font-bold tracking-tight text-gray-800 sm:text-4xl dark:text-gray-200">
           Fair pricing, unfair advantage
@@ -66,7 +66,7 @@ const Pricing = () => {
           Get started with Exions Tech today and take your business to the next level.
         </p>
       </div>
-      <div className="flex items-center justify-center gap-3">
+      {/* <div className="flex items-center justify-center gap-3">
         <button
           onClick={() => setBillingCycle('M')}
           className={cn(
@@ -91,7 +91,7 @@ const Pricing = () => {
           Annual
           {billingCycle === 'A' && <BackgroundShift shiftKey="annual" />}
         </button>
-      </div>
+      </div> */}
     </div>
   )
 

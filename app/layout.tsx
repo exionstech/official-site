@@ -7,6 +7,7 @@ import CrispChat from "@/components/crisp";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import NavBar from "@/components/navbar";
+import FooterSection from "./_components/footer";
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function RootLayout({
         <CrispChat />
         <Analytics />
         <SpeedInsights />
+        <FooterSection />
       </body>
     </html>
   );
