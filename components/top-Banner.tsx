@@ -34,13 +34,13 @@ export default function CollapsibleBanner() {
           <div className="flex items-center text-sm font-medium leading-6 text-white">
             <p>{`
 Make Your IT Services Faster and More Accurate with Extion Tech`}</p>
-            <Link
+            {/* <Link
               href="mailto://admin@exions.tech"
               target="_blank"
               className="ml-3 flex-none rounded-lg bg-white px-3 py-1 text-xs text-black shadow-sm hover:bg-text hover:text-background transition"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-1 justify-end">
             <button
