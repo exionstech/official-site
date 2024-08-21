@@ -22,11 +22,11 @@ function About() {
           professionals with opportunities, resources, and industry connections.
         </p>
         <p className="text-lg font-medium">
-          Join Extions Tech and turn your digital vision into reality.
+          Join Exions Tech and turn your digital vision into reality.
         </p>
         <MainButton
           text="Join Our Community"
-          url="/"
+          url="https://chat.whatsapp.com/Ck0cK90PbdkAaTjLzSDjP1"
           className="bg-secondary px-3 py-2 md:p-3 rounded-xl hover:bg-secondary/85"
         />
       </div>

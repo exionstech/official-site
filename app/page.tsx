@@ -6,6 +6,7 @@ import ServiceSection from "./_components/services";
 import WorkedWith from "@/components/syntaxui/logo-cloude";
 import Projects from "@/components/projects";
 import Community from "./_components/community";
+import Testimonials from "./_components/testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <ServiceSection />
         <Community />
         <Projects />
+        {/* <Testimonials /> */}
       </MaxWrapper>
     </main>
   );

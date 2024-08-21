@@ -1,60 +1,60 @@
-"use client"
-import { cn } from '@/lib/utils'
-import { AnimatePresence, motion } from 'framer-motion'
-import { Check } from 'lucide-react'
-import { useState } from 'react'
+"use client";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
+import { Check } from "lucide-react";
+import { useState } from "react";
 
 const pricingPlans = [
   {
-    name: 'Basic',
-    description: 'Start with essential tools to boost your online presence.',
-    monthlyPrice: 69,
+    name: "Basic",
+    description: "Start with essential tools to boost your online presence.",
+    monthlyPrice: "8000",
     annualPrice: 49,
-    link: 'https://github.com/ansub/syntaxUI',
+    link: "https://cal.com/exionstech/client-meet",
     features: [
-      'SEO Strategy & Topic Recommendations',
-      'Competitor Analysis to stand out',
-      'Built-in Keyword Research',
-      'Target latest Google trends',
-      'SEO optimized blogs and socials',
-      'Technical SEO analysis and Reports',
-      'Target 100+ regions and languages',
+      "SEO Strategy & Topic Recommendations",
+      "Competitor Analysis to stand out",
+      "Built-in Keyword Research",
+      "Target latest Google trends",
+      "SEO optimized blogs and socials",
+      "Technical SEO analysis and Reports",
+      "Target 100+ regions and languages",
     ],
   },
   {
-    name: 'Professional',
+    name: "Professional",
     description:
-      'Unlock enhanced features and premium content to supercharge your business.',
+      "Unlock enhanced features and premium content to supercharge your business.",
     monthlyPrice: 299,
     annualPrice: 199,
-    link: 'https://github.com/ansub/syntaxUI',
+    link: "https://github.com/ansub/syntaxUI",
     features: [
-      'Everything in Basic plan',
-      'Get 25 premium blogs',
-      'Index upto 1000 pages',
-      'Premium support',
-      'Local SEO',
-      'SEO Agent',
+      "Everything in Basic plan",
+      "Get 25 premium blogs",
+      "Index up to 1000 pages",
+      "Premium support",
+      "Local SEO",
+      "SEO Agent",
     ],
   },
   {
-    name: 'Premium',
+    name: "Premium",
     description:
-      'Ultimate customization and dedicated support for enterprises.',
+      "Ultimate customization and dedicated support for enterprises.",
     monthlyPrice: 2499,
     annualPrice: 1666,
-    link: 'https://github.com/ansub/syntaxUI',
+    link: "https://github.com/ansub/syntaxUI",
     features: [
-      'Everything in Professional plan',
-      'Get Unlimited premium blogs',
-      'Add your own AI Model key',
-      'Premium support & training sessions',
+      "Everything in Professional plan",
+      "Get Unlimited premium blogs",
+      "Add your own AI Model key",
+      "Premium support & training sessions",
     ],
   },
-]
+];
 
 const Pricing = () => {
-  const [billingCycle, setBillingCycle] = useState<'M' | 'A'>('M')
+  const [billingCycle, setBillingCycle] = useState<"W" | "U" | "S">("W");
 
   const Heading = () => (
     <div className="relative z-10 my-12 flex flex-col items-center justify-center gap-4 px-5 md:px-0 mb-14">
@@ -66,34 +66,46 @@ const Pricing = () => {
           Get started with Exions Tech today and take your business to the next level.
         </p>
       </div>
-      {/* <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-3">
         <button
-          onClick={() => setBillingCycle('M')}
+          onClick={() => setBillingCycle("W")}
           className={cn(
             `rounded-lg px-4 py-2 text-sm font-medium `,
-            billingCycle === 'M'
-              ? 'relative bg-secondary text-white '
-              : 'text-gray-700 hover:bg-secondary/25 dark:text-gray-300 dark:hover:text-black',
+            billingCycle === "W"
+              ? "relative bg-secondary text-white "
+              : "text-gray-700 hover:bg-secondary/25 dark:text-gray-300 dark:hover:text-black"
           )}
         >
-          Monthly
-          {billingCycle === 'M' && <BackgroundShift shiftKey="monthly" />}
+          Web & App
+          {billingCycle === "W" && <BackgroundShift shiftKey="web" />}
         </button>
         <button
-          onClick={() => setBillingCycle('A')}
+          onClick={() => setBillingCycle("U")}
           className={cn(
             `rounded-lg px-4 py-2 text-sm font-medium `,
-            billingCycle === 'A'
-              ? 'relative bg-secondary text-white '
-              : 'text-gray-700 hover:bg-secondary/25 dark:text-gray-300 dark:hover:text-black',
+            billingCycle === "U"
+              ? "relative bg-secondary text-white "
+              : "text-gray-700 hover:bg-secondary/25 dark:text-gray-300 dark:hover:text-black"
           )}
         >
-          Annual
-          {billingCycle === 'A' && <BackgroundShift shiftKey="annual" />}
+          UI/UX Design
+          {billingCycle === "U" && <BackgroundShift shiftKey="uiux" />}
         </button>
-      </div> */}
+        <button
+          onClick={() => setBillingCycle("S")}
+          className={cn(
+            `rounded-lg px-4 py-2 text-sm font-medium `,
+            billingCycle === "S"
+              ? "relative bg-secondary text-white "
+              : "text-gray-700 hover:bg-secondary/25 dark:text-gray-300 dark:hover:text-black"
+          )}
+        >
+          Socials Handling
+          {billingCycle === "S" && <BackgroundShift shiftKey="socials" />}
+        </button>
+      </div>
     </div>
-  )
+  );
 
   const PricingCards = () => (
     <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-8 lg:flex-row lg:gap-4 px-5 md:px-0">
@@ -109,24 +121,24 @@ const Pricing = () => {
           <div className="mb-8 overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.p
-                key={billingCycle === 'M' ? 'monthly' : 'annual'}
+                key={billingCycle}
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: "spring", stiffness: 100 }}
                 className="my-0 text-3xl font-semibold text-gray-900 dark:text-gray-100"
               >
                 <span>
-                  ${billingCycle === 'M' ? plan.monthlyPrice : plan.annualPrice}
-                </span>
-                <span className="text-sm font-medium">
-                  /{billingCycle === 'M' ? 'month' : 'year'}
+                ₹
+                  {billingCycle === "W"
+                    ? plan.monthlyPrice
+                    : plan.annualPrice}
                 </span>
               </motion.p>
             </AnimatePresence>
             <motion.button
               whileTap={{ scale: 0.985 }}
               onClick={() => {
-                window.open(plan.link)
+                window.open(plan.link);
               }}
               className="mt-8 w-full rounded-lg bg-text py-2 text-sm font-medium text-background hover:bg-secondary transition-all duration-200 ease-in-out"
             >
@@ -142,15 +154,15 @@ const Pricing = () => {
         </div>
       ))}
     </div>
-  )
+  );
 
   return (
     <section className="relative w-full overflow-hidden pb-10">
       <Heading />
       <PricingCards />
     </section>
-  )
-}
+  );
+};
 
 const BackgroundShift = ({ shiftKey }: { shiftKey: string }) => (
   <motion.span
@@ -160,10 +172,10 @@ const BackgroundShift = ({ shiftKey }: { shiftKey: string }) => (
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     exit={{ opacity: 0, scale: 0.8 }}
-    transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+    transition={{ type: "spring", stiffness: 200, damping: 20 }}
   />
-)
+);
 
 export default function PricingPage() {
-  return <Pricing />
+  return <Pricing />;
 }

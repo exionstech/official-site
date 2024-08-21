@@ -18,12 +18,12 @@ function HeroSection() {
 
         <p className="text-md font-semibold md:text-lg text-black my-5 md:my-10">
           At Exions Tech, we specialize in providing innovative IT services and
-          solutions, transforming your digital ideas into reality or your ofline
-          exellence into online presence with precision and excellence.
+          solutions, transforming your digital ideas into reality or your offline
+          excellence into online presence with precision and excellence.
         </p>
 
         <MainButton
-          text="Shedule a meet"
+          text="Schedule a meet"
           className="bg-secondary px-4 py-2 md:p-3 rounded-xl"
           url="https://cal.com/exionstech/client-meet"
 

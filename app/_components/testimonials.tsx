@@ -5,23 +5,9 @@ const testimonials = [
   {
     name: "Ethan Pollack",
     description:
-      "I've been using SyntaxUI for a few months now and I'm really impressed with the results. The components are easy to use and the documentation is great.",
+      "I had the pleasure of working with Suman on the development of the xconics website, and I couldn't be more satisfied with the outcome. From the initial concept to the final launch, Suman demonstrated exceptional technical expertise, creativity, and attention to detail. He was incredibly responsive to our needs, always willing to go the extra mile to ensure that the website not only met but exceeded our expectations.",
     profession: "Software Developer",
     image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
-  },
-  {
-    name: "Aiko",
-    profession: "Design Engineer",
-    description:
-      "SyntaxUI is a great tool for building user interfaces. It's easy to use and has a lot of features. I've been using it for a while now and I'm really happy with the results.",
-    image: "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a",
-  },
-  {
-    name: "Alena Zhukova",
-    profession: "Software Engineer",
-    description:
-      "SyntaxUI is the perfect tool for building user interfaces. It's easy to use and has a lot of features. I've been using it for a while now and I'm really happy with the results. The components are easy to use and the documentation is great.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
   },
 ];
 interface TestimonalCardProps {
@@ -68,9 +54,16 @@ const TestimonialCard: FC<TestimonalCardProps> = ({
 
 const Testimonials = () => {
   return (
-    <div id="feedback" className="flex flex-col items-center justify-center gap-3 pb-10 md:pb-20 -mt-10 md:space-y-2">
+    <div
+      id="feedback"
+      className="flex flex-col items-center justify-center gap-3 pb-10 md:pb-20 -mt-10 md:space-y-2"
+    >
       <h1 className="mb-1 max-w-2xl text-left md:text-center text-4xl font-bold tracking-tighter text-gray-900 md:text-5xl dark:text-gray-100 leading-snug md:leading-normal">
-        Why people love <span className="bg-secondary text-background px-2 py-0.5 rounded-md"> Exions</span>
+        Why people love{" "}
+        <span className="bg-secondary text-background px-2 py-0.5 rounded-md">
+          {" "}
+          Exions
+        </span>
       </h1>
       <p className="max-w-2xl text-left md:text-center text-md md:text-lg font-semibold text-gray-600  dark:text-gray-400">
         SyntaxUI is loved by the community and is used by many companies. It is
