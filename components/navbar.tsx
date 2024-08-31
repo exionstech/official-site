@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AlignJustify, Loader2, X } from "lucide-react";
-
+import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 import Logo from "./logo";
 import CollapsibleBanner from "./top-Banner";
@@ -19,9 +19,8 @@ import {
 import { useForm } from "@formspree/react";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
-import Instagram from "./icons/instagram";
 import { Input } from "./ui/input";
-import { FaGithub } from "react-icons/fa";
+
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -30,7 +29,7 @@ function NavBar() {
 
   useEffect(() => {
     if (state.succeeded) {
-      // toast.success("Message sent ✨");
+  toast.success("Message sent successfully");
       setIsDialogOpen(false);
     }
   }, [state.succeeded]);
@@ -62,6 +61,8 @@ function NavBar() {
   };
 
   return (
+   <>
+   <Toaster />
     <div className="sticky top-0  left-0 right-0  md:shadow-none z-50 backdrop-blur-lg flex flex-col gap-0 border-b border-text/20">
       <CollapsibleBanner />
       {/* DESKTOP */}
@@ -217,6 +218,7 @@ function NavBar() {
         )}
       </div>
     </div>
+   </>
   );
 }
 
