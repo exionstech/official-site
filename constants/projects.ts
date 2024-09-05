@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "EDPL Travel & Tours",
     description:
-      "Exons Tech developed an online platform for EDPL Travel Agency, enhancing their digital presence and streamlining travel bookings.",
+      "Exions Tech developed an online platform for EDPL Travel Agency, enhancing their digital presence and streamlining travel bookings.",
     github: "",
     image: "/projects/edpl.png",
     link: "https://edpl.in/",
