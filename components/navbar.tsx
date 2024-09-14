@@ -68,7 +68,7 @@ function NavBar() {
         <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 2xl:px-64">
           <div className="flex justify-between items-center px-20">
             <Logo />
-            <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
+            <div className="flex gap-[20px] xl:gap-[35px] text-[16px] items-center select-none">
               {links.map((link, index) => (
                 <Link
                   key={index}
