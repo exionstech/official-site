@@ -26,7 +26,7 @@ export default function Products() {
         {products.map((project) => (
           <div
             key={project.title}
-            className="bg-background border border-b-[6px] border-text p-1 rounded-xl flex flex-col justify-center items-center gap-3"
+            className="bg-background border border-b-[6px] border-text p-1 rounded-xl flex flex-col justify-start items-center gap-3"
           >
             <img
               src={project.image}

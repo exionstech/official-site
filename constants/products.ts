@@ -1,27 +1,26 @@
 export const products = [
-    {
-      title: "XCONICS",
-      description:
-        "Exions Tech successfully delivered the official XCONICS website, creating a responsive, user-friendly platform that highlights their innovative products and services.",
-      github: "",
-      image: "/products/exlan.png",
-      link: "https://xconics.vercel.app",
-    },
-    // {
-    //   title: "EDPL Travel & Tours",
-    //   description:
-    //     "Exions Tech developed an online platform for EDPL Travel Agency, enhancing their digital presence and streamlining travel bookings.",
-    //   github: "",
-    //   image: "/projects/edpl.png",
-    //   link: "https://edpl.vercel.app/",
-    // },
-    // {
-    //   title: "Ngo Website",
-    //   description:
-    //     "As a tech startup, we’re proud to offer a  dynamic website platform for pet parents to browse, learn, and adopt.",
-    //   github: "",
-    //   image: "/projects/ngo.png",
-    //   link: "https://melodysfamily.exions.tech",
-    // },
-  ];
-  
+  {
+    title: "ExLan",
+    description:
+      "ExLan offers a dynamic and innovative platform where students and small start-ups can collaborate, gain hands-on experience, and grow together in a thriving ecosystem.",
+    github: "",
+    image: "/products/exlan.png",
+    link: "https://exlan.tech/",
+  },
+  {
+    title: "Quick BIO",
+    description:
+      "Craft your bio in just a few clicks with Quick BIO. A simple and easy-to-use platform to create a professional and engaging bio for your social media profiles.",
+    github: "",
+    image: "/products/quick-bio.png",
+    link: "https://quick-bio.exions.tech/",
+  },
+  {
+    title: "Praxis AI",
+    description:
+      "Boost your interview skills and confidence with Praxis AI. A platform that offers a real-time interview experience with AI-generated questions and feedback.",
+    github: "",
+    image: "/products/praxis.png",
+    link: "https://praxis.exions.tech/",
+  },
+];

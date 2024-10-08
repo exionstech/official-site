@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { projects } from "@/constants/projects";
+import { works } from "@/constants/projects";
 
 import { ArrowRight, Code } from "lucide-react";
 import Link from "next/link";
@@ -25,22 +25,22 @@ export default function Projects() {
         </p>
       </div>
       <div className="flex flex-wrap gap-6 w-full sm:grid grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {works.map((work) => (
           <div
-            key={project.title}
-            className="bg-background border border-b-[6px] border-text p-1 rounded-xl flex flex-col justify-center items-center gap-3"
+            key={work.title}
+            className="bg-background border border-b-[6px] border-text p-1 rounded-xl flex flex-col justify-start items-center gap-3"
           >
             <img
-              src={project.image}
-              alt={project.title}
+              src={work.image}
+              alt={work.title}
               className="w-full max-h-64 sm:h-44 rounded-lg"
             />
             <div className="px-2.5 mb-2.5">
-              <h1 className="text-lg font-medium">{project.title}</h1>
-              <p className="text-sm text-text/80">{project.description}</p>
+              <h1 className="text-lg font-medium">{work.title}</h1>
+              <p className="text-sm text-text/80">{work.description}</p>
               <div className="mt-3 flex gap-3">
                 <Link
-                  href={project.link}
+                  href={work.link}
                   className="flex items-center gap-1"
                   target="_blank"
                 >
@@ -48,9 +48,9 @@ export default function Projects() {
                     View <ArrowRight className="w-4 h-4 -rotate-45" />
                   </Button>
                 </Link>
-                {project.github && (
+                {work.github && (
                   <Link
-                    href={project.github}
+                    href={work.github}
                     className="flex items-center gap-1"
                     target="_blank"
                   >

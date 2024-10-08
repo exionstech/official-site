@@ -3,13 +3,28 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Ethan Pollack",
+    name: "Punnyartha Banerjee",
     description:
-      "I had the pleasure of working with Suman on the development of the xconics website, and I couldn't be more satisfied with the outcome. From the initial concept to the final launch, Suman demonstrated exceptional technical expertise, creativity, and attention to detail. He was incredibly responsive to our needs, always willing to go the extra mile to ensure that the website not only met but exceeded our expectations.",
-    profession: "Software Developer",
-    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+      "I had the pleasure of working with Suman, the founder of Exions Tech, on our Xconics website, and I couldn't be more satisfied. From concept to launch, Suman showcased exceptional technical expertise and creativity. He was highly responsive to our needs and went the extra mile to ensure the final product exceeded our expectations.",
+    profession: "Software Engineer",
+    image: "/testimonials/punnyarthada.png",
+  },
+  {
+    name: "Akash Singh",
+    description:
+      "I had the pleasure of managing Nilanjan, co-founder of Exions Tech, as a web designer. His performance consistently exceeded expectations. Nilanjan is an exceptional team player, skilled in web design, and delivers projects ahead of schedule. I wholeheartedly recommend him for any web design role; he is a valuable asset to any team.",
+    profession: "Senior Graphic Designer",
+    image: "/testimonials/akash-singh.png",
+  },
+  {
+    name: "Susovan Ghosh",
+    description:
+      "I had the pleasure of working with Exons Tech, and their performance consistently exceeded expectations. The team is highly skilled, professional, and always delivers projects ahead of schedule. I highly recommend Exons Tech for any web development or design needs—they are a valuable asset to any project.",
+    profession: "CTO at Medggy",
+    image: "/testimonials/susovanda.png",
   },
 ];
+
 interface TestimonalCardProps {
   name: string;
   description: string;
@@ -66,8 +81,7 @@ const Testimonials = () => {
         </span>
       </h1>
       <p className="max-w-2xl text-left md:text-center text-md md:text-lg font-semibold text-gray-600  dark:text-gray-400">
-        SyntaxUI is loved by the community and is used by many companies. It is
-        a great tool for rapid development and launching projects.
+        Here's what our clients have to say about us and our work
       </p>
       <div className="flex flex-wrap justify-center gap-5 mt-6 w-full md:pt-5">
         {testimonials.map((testimonial) => (

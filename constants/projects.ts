@@ -1,4 +1,4 @@
-export const projects = [
+export const works = [
   {
     title: "XCONICS",
     description:
@@ -16,7 +16,7 @@ export const projects = [
     link: "https://edpl.vercel.app/",
   },
   {
-    title: "Ngo Website",
+    title: "NGO Website",
     description:
       "As a tech startup, we’re proud to offer a  dynamic website platform for pet parents to browse, learn, and adopt.",
     github: "",

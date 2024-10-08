@@ -8,21 +8,21 @@ const people = [
     name: "Suman Mondal",
     designation: "Founder",
     image:
-      "/avtar/Suman.jpeg",
+      "/avtar/suman.png",
   },
   {
     id: 2,
     name: "Atmajo Chowdhury",
     designation: "Co Founder & CEO",
     image:
-      "/avtar/Atmajo.jpeg",
+      "/avtar/atmajo.png",
   },
   {
     id: 3,
     name: "Nilanjan Joarder",
     designation: "Co Founder",
     image:
-      "/avtar/Nilanjan.jpeg",
+      "/avtar/nilanjan.png",
   },
 ];
 

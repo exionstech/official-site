@@ -20,7 +20,7 @@ export default function Home() {
         <Products />
         <Community />
         <Projects />
-        {/* <Testimonials /> */}
+        <Testimonials />
       </MaxWrapper>
     </main>
   );
