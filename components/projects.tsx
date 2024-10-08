@@ -1,13 +1,10 @@
-"use client";
+
 import { Button } from "@/components/ui/button";
 import { projects } from "@/constants/projects";
 
 import { ArrowRight, Code } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import MainButton from "./buttons/main-button";
 
 export default function Projects() {
   return (
@@ -17,13 +14,13 @@ export default function Projects() {
     >
       <div className="flex flex-col space-y-5 items-center justify-center mt-5 md:mt-0 md:mb-5">
         <h1 className="text-4xl md:text-5xl font-bold">
-          Our Completed
+          Our Client
           <span className="md:ml-2 bg-secondary text-background inline-block px-3 py-1 md:py-2 rounded-md">
-            Projects
+            Works
           </span>
         </h1>
 
-        <p className="text-md font-semibold md:text-xl text-left md:text-center w-full md:w-[90%]">
+        <p className="text-md font-semibold md:text-xl text-left md:text-center w-full md:w-full">
           We have successfully delivered a variety of projects
         </p>
       </div>

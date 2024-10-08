@@ -13,14 +13,14 @@ export const projects = [
       "Exions Tech developed an online platform for EDPL Travel Agency, enhancing their digital presence and streamlining travel bookings.",
     github: "",
     image: "/projects/edpl.png",
-    link: "https://edpl.in/",
+    link: "https://edpl.vercel.app/",
   },
   {
-    title: "Quick Bio",
+    title: "Ngo Website",
     description:
-      "AI-powered tool for instant, personalized bio generation based on user input",
-    github: "https://github.com/suman-3/Quick-Bio",
-    image: "/projects/project3.png",
-    link: "https://quickbio.exions.xyz",
+      "As a tech startup, we’re proud to offer a  dynamic website platform for pet parents to browse, learn, and adopt.",
+    github: "",
+    image: "/projects/ngo.png",
+    link: "https://melodysfamily.exions.tech",
   },
 ];

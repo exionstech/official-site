@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import NavBar from "@/components/navbar";
 import FooterSection from "./_components/footer";
-
+import type { Viewport } from 'next'
 
 export const metadata: Metadata = {
   title: "Exions Tech",
@@ -16,8 +16,12 @@ export const metadata: Metadata = {
     "A premier IT services and consultancy service. We specialize in website and app design, development, and social media services, delivering customized solutions for your business needs.",
   icons: { apple:'/icon.png', icon:'/icon.png'},
   manifest: "./manifest.json",
-  themeColor: "#fff",
+  // themeColor: "#fff",
 };
+
+export const viewport: Viewport = {
+  themeColor: '#fff',
+}
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
