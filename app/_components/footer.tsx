@@ -75,6 +75,13 @@ function FooterSection() {
           >
             Techtonic Community
           </Link>
+          <Link
+            href="https://exlan.tech"
+            target="_blank"
+            className="text-white mt-[20px] cursor-pointer flex items-center gap-1"
+          >
+            Exlan Community
+          </Link>
         </div>
         <div className="flex flex-col items-center md:items-start justify-start w-full md:w-[20%]">
           <div className="px-2 bg-secondary inline-block font-medium text-[20px] text-background rounded-md">
