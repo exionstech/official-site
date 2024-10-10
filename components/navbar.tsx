@@ -41,20 +41,20 @@ function NavBar() {
       name: "Services",
       link: "/#services",
     },
-    // {
-    //   name: "Feedback",
-    //   link: "/#feedback",
-    // },
     {
-      name: "Projects",
-      link: "/#projects",
+      name: "Products",
+      link: "/#products",
+    },
+    {
+      name: "Works",
+      link: "/#works",
     },
   ];
 
   const toggleMenu = () => {
     setMenu(!menu);
   };
-  
+
   const handleLinkClick = () => {
     setMenu(false);
   };
@@ -197,7 +197,7 @@ function NavBar() {
               )}
             </div>
           </div>
-          {menu ? (
+          {menu && (
             <div className="my-8 select-none animate-in slide-in-from-right">
               <div className="flex flex-col gap-8 mt-8 mx-4">
                 {links.map((link, index) => (
@@ -212,8 +212,6 @@ function NavBar() {
                 ))}
               </div>
             </div>
-          ) : (
-            <div></div>
           )}
         </div>
       </div>

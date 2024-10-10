@@ -6,21 +6,21 @@ const testimonials = [
     name: "Punnyartha Banerjee",
     description:
       "I had the pleasure of working with Suman, the founder of Exions Tech, on our Xconics website, and I couldn't be more satisfied. From concept to launch, Suman showcased exceptional technical expertise and creativity. He was highly responsive to our needs and went the extra mile to ensure the final product exceeded our expectations.",
-    profession: "Software Engineer",
+    profession: "Software Engineer | XCONICS",
     image: "/testimonials/punnyarthada.png",
   },
   {
     name: "Akash Singh",
     description:
       "I had the pleasure of managing Nilanjan, co-founder of Exions Tech, as a web designer. His performance consistently exceeded expectations. Nilanjan is an exceptional team player, skilled in web design, and delivers projects ahead of schedule. I wholeheartedly recommend him for any web design role; he is a valuable asset to any team.",
-    profession: "Senior Graphic Designer",
+    profession: "Graphic Designer | iLEAD Kolkata",
     image: "/testimonials/akash-singh.png",
   },
   {
     name: "Susovan Ghosh",
     description:
       "I had the pleasure of working with Exons Tech, and their performance consistently exceeded expectations. The team is highly skilled, professional, and always delivers projects ahead of schedule. I highly recommend Exons Tech for any web development or design needs—they are a valuable asset to any project.",
-    profession: "CTO at Medggy",
+    profession: "CTO | Medggy",
     image: "/testimonials/susovanda.png",
   },
 ];
