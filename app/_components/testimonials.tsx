@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Susovan Ghosh",
     description:
-      "I had the pleasure of working with Exons Tech, and their performance consistently exceeded expectations. The team is highly skilled, professional, and always delivers projects ahead of schedule. I highly recommend Exons Tech for any web development or design needs—they are a valuable asset to any project.",
+      "I had the pleasure of working with Exions Tech, and their performance consistently exceeded expectations. The team is highly skilled, professional, and always delivers projects ahead of schedule. I highly recommend Exions Tech for any web development or design needs—they are a valuable asset to any project.",
     profession: "CTO | Medggy",
     image: "/testimonials/susovanda.png",
   },
