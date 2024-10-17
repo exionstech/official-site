@@ -56,7 +56,7 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
-        <div id="loader" className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div id="loader" className="fixed inset-0 z-50 flex items-center justify-center bg-white">
           <Loader />
         </div>
         <div id="content">
