@@ -62,7 +62,7 @@ function NavBar() {
   return (
     <>
       <Toaster />
-      <div className="sticky top-0  left-0 right-0  md:shadow-none z-20 backdrop-blur-lg flex flex-col gap-0 border-b border-text/10">
+      <div className="sticky top-0  left-0 right-0  md:shadow-none z-30 backdrop-blur-lg flex flex-col gap-0 border-b border-text/10">
         <CollapsibleBanner />
         {/* DESKTOP */}
         <div className=" hidden lg:block animate-in fade-in zoom-in opacity-85 py-4 2xl:px-64">
