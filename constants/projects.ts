@@ -5,7 +5,7 @@ export const works = [
       "Exions Tech successfully delivered the official XCONICS website, creating a responsive, user-friendly platform that highlights their innovative products and services.",
     github: "",
     image: "/projects/xconics.png",
-    link: "https://xconics.vercel.app",
+    link: "https://www.xconics.com/",
   },
   {
     title: "EDPL Travel & Tours",
