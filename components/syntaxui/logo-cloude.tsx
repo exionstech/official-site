@@ -26,6 +26,11 @@ const logos = [
       name: 'Sync',
       url: '/logo/sync.svg',
       size: 'w-28 md:w-32',
+    },
+    {
+      name: 'Jayma Bio Innovations',
+      url: '/logo/jaymabio.png',
+      size: 'w-28 md:w-32',
     }
   ]
   

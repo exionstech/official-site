@@ -32,8 +32,7 @@ export default function CollapsibleBanner() {
       >
         <div className="flex w-full items-center gap-x-6 bg-secondary px-6 py-3 sm:px-3.5 sm:before:flex-1">
           <div className="flex items-center text-sm font-medium leading-6 text-white">
-            <p>{`
-Make Your IT Services Faster and More Accurate with Extion Tech`}</p>
+            <p>{`Make Your IT Services Faster and More Accurate with Extion Tech`}</p>
             {/* <Link
               href="mailto://admin@exions.tech"
               target="_blank"
