@@ -19,9 +19,9 @@ export default function Home() {
         <WorkedWith />
         <About />
         <ServiceSection />
-        <Products />
-        <Community />
         <Projects />
+        <Community />
+        <Products />
         <Testimonials />
         <NilanjanData />
         <PageData />
