@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const CloseIcon = ({ className, ...props }: { className?: string }) => (
@@ -23,6 +24,11 @@ const CloseIcon = ({ className, ...props }: { className?: string }) => (
 
 export default function CollapsibleBanner() {
   const [isVisible, setIsVisible] = useState(true);
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    window.open("https://jaymabioinnovations.com/", "_blank");
+  }
 
   return (
     <>
@@ -32,8 +38,10 @@ export default function CollapsibleBanner() {
       >
         <div className="flex w-full items-center gap-x-6 bg-secondary px-6 py-3 sm:px-3.5 sm:before:flex-1">
           <div className="flex items-center text-sm font-medium leading-6 text-white">
-            <p>{`
-Make Your IT Services Faster and More Accurate with Extion Tech`}</p>
+            <p
+              onClick={handleRedirect}
+              className="cursor-pointer"
+            >{`Enhance IT efficiency with Extion Tech – Recently delivered for Jayma Bio Innovation Pvt. Ltd.`}</p>
             {/* <Link
               href="mailto://admin@exions.tech"
               target="_blank"

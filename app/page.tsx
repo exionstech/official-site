@@ -9,6 +9,7 @@ import Community from "./_components/community";
 import Testimonials from "./_components/testimonials";
 import Products from "@/components/products";
 import NilanjanData from "./_extra-data/nilanjan";
+import PageData from "./_extra-data/page-data";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Projects />
         <Testimonials />
         <NilanjanData />
+        <PageData />
       </MaxWrapper>
     </main>
   );
