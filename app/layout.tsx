@@ -9,10 +9,10 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavBar from "@/components/navbar";
 import FooterSection from "./_components/footer";
 import type { Viewport } from "next";
-import dynamic from 'next/dynamic';
-import Script from 'next/script';
+import dynamic from "next/dynamic";
+import Script from "next/script";
 
-const Loader = dynamic(() => import('./_components/loader'), { ssr: false });
+const Loader = dynamic(() => import("./_components/loader"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Exions Tech",
@@ -44,6 +44,10 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth" }}
     >
       <head>
+        <meta
+          name="impact-site-verification"
+          content="b97d8359-e4fd-4243-9d8c-2f089a5e6456"
+        />
         <style>{`
           #content { display: none; }
           #loader { display: flex; }
@@ -56,7 +60,10 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
-        <div id="loader" className="fixed inset-0 z-50 flex items-center justify-center bg-white">
+        <div
+          id="loader"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-white"
+        >
           <Loader />
         </div>
         <div id="content">
